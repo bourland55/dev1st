@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category/>
+        <format>png</format>
+        <height>1280</height>
+        <image>7ba6629835df89106c157ae0b6a7ded2</image>
+        <name>x_aesc_db_time_off.green_check_trans.jpg</name>
+        <size_bytes>123445</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:44</sys_created_on>
+        <sys_id>fba6629824df8910cc6e3e0d2de407d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_aesc_db_time_off.green_check_trans.jpg</sys_name>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name>db_image_fba6629824df8910cc6e3e0d2de407d2</sys_update_name>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:44</sys_updated_on>
+        <thumbnail/>
+        <width>1280</width>
+    </db_image>
+</record_update>

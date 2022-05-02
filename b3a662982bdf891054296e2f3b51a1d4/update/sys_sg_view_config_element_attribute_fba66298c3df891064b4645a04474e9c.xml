@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_config_element_attribute">
+    <sys_sg_view_config_element_attribute action="INSERT_OR_UPDATE">
+        <description>text_05_FieldValue</description>
+        <name display_value="FieldValue">c2eed5c2b7321010df65f6efce11a9cf</name>
+        <sys_class_name>sys_sg_view_config_element_attribute</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:41</sys_created_on>
+        <sys_id>fba66298c3df891064b4645a04474e9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>c2eed5c2b7321010df65f6efce11a9cf</sys_name>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name>sys_sg_view_config_element_attribute_fba66298c3df891064b4645a04474e9c</sys_update_name>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:41</sys_updated_on>
+        <translated_value/>
+        <value>sys_created_on</value>
+        <view_config_element display_value="text_05_element">7ba66298fadf8910c5949748cf811e9d</view_config_element>
+    </sys_sg_view_config_element_attribute>
+    <sys_translated_text action="delete_multiple" query="documentkey=fba66298c3df891064b4645a04474e9c"/>
+</record_update>

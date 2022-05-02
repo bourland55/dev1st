@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_applet_launcher_m2m_section">
+    <sys_sg_applet_launcher_m2m_section action="INSERT_OR_UPDATE">
+        <applet_launcher display_value="Dashboard">7fa6629832df89103755dddeede4f5a9</applet_launcher>
+        <order>30</order>
+        <section display_value="Time Off Trends">b7a66298fbdf89104d278df2bd7a07a9</section>
+        <sys_class_name>sys_sg_applet_launcher_m2m_section</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:53</sys_created_on>
+        <sys_id>77a6629871df8910d943be180351d4a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name>sys_sg_applet_launcher_m2m_section_77a6629871df8910d943be180351d4a9</sys_update_name>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:53</sys_updated_on>
+    </sys_sg_applet_launcher_m2m_section>
+</record_update>

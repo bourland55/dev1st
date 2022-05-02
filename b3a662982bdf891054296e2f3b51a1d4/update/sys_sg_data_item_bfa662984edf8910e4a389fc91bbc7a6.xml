@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_data_item">
+    <sys_sg_data_item action="INSERT_OR_UPDATE">
+        <condition_type>instance_relative_url</condition_type>
+        <description/>
+        <group_by/>
+        <instance_relative_url_qc>{{Approved or Rejected}}</instance_relative_url_qc>
+        <name>DB Time Off Data Item</name>
+        <offline_query_condition/>
+        <offline_query_condition_script/>
+        <query_condition/>
+        <query_condition_script/>
+        <sys_class_name>sys_sg_data_item</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:17</sys_created_on>
+        <sys_id>bfa662984edf8910e4a389fc91bbc7a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DB Time Off Data Item</sys_name>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name>sys_sg_data_item_bfa662984edf8910e4a389fc91bbc7a6</sys_update_name>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:17</sys_updated_on>
+        <table>x_aesc_db_time_off_request</table>
+    </sys_sg_data_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=bfa662984edf8910e4a389fc91bbc7a6"/>
+</record_update>

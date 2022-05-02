@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_addon_event_mapping">
+    <sys_ux_addon_event_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <name>List Decline Modal</name>
+        <parent_macroponent display_value="List">7ba6629896df8910f395d8d3d7378284</parent_macroponent>
+        <source_da display_value="decline">fba66298dbdf8910cff27531244ec1c4</source_da>
+        <source_element_id>list</source_element_id>
+        <sys_class_name>sys_ux_addon_event_mapping</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7fa6629867df8910f12e2a8627405384</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>List Decline Modal</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name>sys_ux_addon_event_mapping_7fa6629867df8910f12e2a8627405384</sys_update_name>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:27</sys_updated_on>
+        <target_event display_value="LIST#DECLINE_MODAL">33a6629890df891015b9a6a7f123db85</target_event>
+        <target_payload_mapping>{&#13;
+    "type": "MAP_CONTAINER",&#13;
+    "container": {&#13;
+      "table": {&#13;
+        "type": "EVENT_PAYLOAD_BINDING",&#13;
+        "binding": {&#13;
+          "address": [&#13;
+            "table"&#13;
+          ]&#13;
+        }&#13;
+      },&#13;
+     "sysIds": {&#13;
+        "type": "EVENT_PAYLOAD_BINDING",&#13;
+        "binding": {&#13;
+          "address": [&#13;
+            "sysIds"&#13;
+          ]&#13;
+        }&#13;
+      }&#13;
+    }&#13;
+  }</target_payload_mapping>
+    </sys_ux_addon_event_mapping>
+</record_update>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_declarative_action_payload_definition">
+    <sys_declarative_action_payload_definition action="INSERT_OR_UPDATE">
+        <action_key>OPEN MODAL</action_key>
+        <applicable_to>360935e9534723003eddddeeff7b127d,c3547169534723003eddddeeff7b126c</applicable_to>
+        <description/>
+        <label>Record Open Modal</label>
+        <payload_field_table>var__m_sys_declarative_action_payload_field_7ba662986bdf89102014c61e50787ec4</payload_field_table>
+        <payload_template>{&#13;
+   "size":"md","route": "custom_1", "fields": {"table":"{{table}}", "sysId":"{{sysId}}"}&#13;
+}</payload_template>
+        <sys_class_name>sys_declarative_action_payload_definition</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:31</sys_created_on>
+        <sys_id>7ba662986bdf89102014c61e50787ec4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record Open Modal</sys_name>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name>sys_declarative_action_payload_definition_7ba662986bdf89102014c61e50787ec4</sys_update_name>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:31</sys_updated_on>
+    </sys_declarative_action_payload_definition>
+</record_update>

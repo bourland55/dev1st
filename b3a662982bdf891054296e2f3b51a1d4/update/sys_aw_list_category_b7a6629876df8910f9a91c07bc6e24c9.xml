@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_aw_list_category">
+    <sys_aw_list_category action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <order>100</order>
+        <sys_class_name>sys_aw_list_category</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b7a6629876df8910f9a91c07bc6e24c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Time Off request</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name>sys_aw_list_category_b7a6629876df8910f9a91c07bc6e24c9</sys_update_name>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:27</sys_updated_on>
+        <title>Time Off request</title>
+        <workspace display_value="Time Off Request WS">77a66298e7df8910654227f0478256c9</workspace>
+    </sys_aw_list_category>
+</record_update>

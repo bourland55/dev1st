@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_chart_color">
+    <sys_report_chart_color action="INSERT_OR_UPDATE">
+        <color>#FF0000</color>
+        <color_name display_value="#003059">b7a6629855df8910e6c527163f7c9ecb</color_name>
+        <display>background-color:#003059</display>
+        <element>status</element>
+        <name>x_aesc_db_time_off_request</name>
+        <sys_class_name>sys_report_chart_color</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:33</sys_created_on>
+        <sys_id>bfa66298b5df89105436ad0584c325b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_aesc_db_time_off_request</sys_name>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name>sys_report_chart_color_bfa66298b5df89105436ad0584c325b1</sys_update_name>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:33</sys_updated_on>
+        <value>rejected</value>
+    </sys_report_chart_color>
+</record_update>

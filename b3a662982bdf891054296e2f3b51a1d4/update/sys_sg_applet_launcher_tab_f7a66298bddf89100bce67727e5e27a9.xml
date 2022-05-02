@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_applet_launcher_tab">
+    <sys_sg_applet_launcher_tab action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applet_launcher display_value="Time Off">fba6629842df8910af116e2a9b2b6aa9</applet_launcher>
+        <icon display_value="My Requests Icon">33a6629829df8910c472bc179e7627a9</icon>
+        <label>Time Off</label>
+        <roles/>
+        <sys_class_name>sys_sg_applet_launcher_tab</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:37</sys_created_on>
+        <sys_id>f7a66298bddf89100bce67727e5e27a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Time Off</sys_name>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name>sys_sg_applet_launcher_tab_f7a66298bddf89100bce67727e5e27a9</sys_update_name>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:37</sys_updated_on>
+    </sys_sg_applet_launcher_tab>
+</record_update>

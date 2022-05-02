@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_aw_master_config">
+    <sys_aw_master_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <brand_color>#003059</brand_color>
+        <compiled_page display_value="Workspace Core">b70867ad0f603300bb57f4a1ff767e15</compiled_page>
+        <compiled_page_registry/>
+        <description/>
+        <global_search display_value="Time off search settings">f3a66298b2df8910f73ef5828cbd72c9</global_search>
+        <global_search_data display_value="">fd08fbeead38a010f8779a6b16742d0a</global_search_data>
+        <hide_search_results_count>false</hide_search_results_count>
+        <name>Time Off Request WS</name>
+        <navigation_type>tab</navigation_type>
+        <notifications_enabled>true</notifications_enabled>
+        <primary_color>#eae2f0</primary_color>
+        <search_enabled>true</search_enabled>
+        <sys_class_name>sys_aw_master_config</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:44</sys_created_on>
+        <sys_id>77a66298e7df8910654227f0478256c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Time Off Request WS</sys_name>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name>sys_aw_master_config_77a66298e7df8910654227f0478256c9</sys_update_name>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:44</sys_updated_on>
+        <user_preference_controls_enabled>true</user_preference_controls_enabled>
+        <workspace_logo/>
+        <workspace_url>time-off-request</workspace_url>
+    </sys_aw_master_config>
+</record_update>

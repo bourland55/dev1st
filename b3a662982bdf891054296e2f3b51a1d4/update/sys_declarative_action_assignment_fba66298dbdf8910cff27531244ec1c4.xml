@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_declarative_action_assignment">
+    <sys_declarative_action_assignment action="INSERT_OR_UPDATE">
+        <action/>
+        <action_attributes/>
+        <action_name>decline</action_name>
+        <action_payload/>
+        <action_type>type</action_type>
+        <active>true</active>
+        <button_type>tertiary</button_type>
+        <client_action display_value="Edit">73a662986adf8910018b8d0eaed448c5</client_action>
+        <client_conditions/>
+        <client_conditions_on_fields/>
+        <client_script/>
+        <confirmation_message/>
+        <confirmation_required>false</confirmation_required>
+        <create_access>false</create_access>
+        <declarative_action_render_mode/>
+        <declarative_action_type>uxf_client_action</declarative_action_type>
+        <delete_access>false</delete_access>
+        <dependency/>
+        <description/>
+        <design_icon/>
+        <enabled>true</enabled>
+        <field_name/>
+        <field_type>glide_date</field_type>
+        <form_fields_required>false</form_fields_required>
+        <form_position/>
+        <group display_value="">c5b57bdc88b16010f877f9b035bdf4a9</group>
+        <group_by>true</group_by>
+        <icon/>
+        <label>Decline</label>
+        <model display_value="List">c3547169534723003eddddeeff7b126c</model>
+        <model_conditions/>
+        <model_field_required/>
+        <order>20</order>
+        <payload_map/>
+        <read_access>false</read_access>
+        <record_conditions/>
+        <record_selection_required>false</record_selection_required>
+        <required_roles name="x_aesc_db_time_off.manager">b7a66298aedf8910197fc5ed02d9e8d3</required_roles>
+        <requires_value>false</requires_value>
+        <script_condition/>
+        <server_script><![CDATA[function rejectPTO(){
+	g_form.setValue('status', 'rejected');
+	var reason = g_form.getValue('rejection_reason');
+	g_form.hideFieldMsg('rejection_reason');
+	if (reason == ''){
+		g_form.showFieldMsg('rejection_reason', 'Reason for rejection is required when rejecting a Time Off request.', 'error');
+		return false; //abort submission
+	}
+	
+	gsftSubmit(null, g_form.getFormElement(), 'pto_reject'); //MUST call the 'Action name' set in this UI Action
+}
+
+//Code that runs without 'onclick'
+//Ensure call to server-side function with no browser errors
+if (typeof window == 'undefined')
+	serverTimeOff();
+
+function serverTimeOff(){
+	var pto = new TimeOffSNC().rejectTimeOff(current);
+}]]></server_script>
+        <specificity>11</specificity>
+        <sys_class_name>sys_declarative_action_assignment</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fba66298dbdf8910cff27531244ec1c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>decline</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name>sys_declarative_action_assignment_fba66298dbdf8910cff27531244ec1c4</sys_update_name>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:10</sys_updated_on>
+        <table>x_aesc_db_time_off_request</table>
+        <tooltip/>
+        <ui_component/>
+        <view/>
+        <workspace/>
+        <write_access>false</write_access>
+    </sys_declarative_action_assignment>
+    <sys_translated_text action="delete_multiple" query="documentkey=fba66298dbdf8910cff27531244ec1c4"/>
+</record_update>

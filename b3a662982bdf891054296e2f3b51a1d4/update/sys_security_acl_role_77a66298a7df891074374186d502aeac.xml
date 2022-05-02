@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:17</sys_created_on>
+        <sys_id>77a66298a7df891074374186d502aeac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_security_acl display_value="x_aesc_db_time_off_request">73a662985ddf891055bda82e79d5c9af</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_77a66298a7df891074374186d502aeac</sys_update_name>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:17</sys_updated_on>
+        <sys_user_role display_value="x_aesc_db_time_off.employee" name="x_aesc_db_time_off.employee">bba662981fdf8910f5462ef5db6022d3</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

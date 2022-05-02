@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_applet_launcher">
+    <sys_sg_applet_launcher action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <available_offline>false</available_offline>
+        <header_button display_value="Jump Logged In User Profile">b4bafa0687103300a785940307cb0b3a</header_button>
+        <header_titles>bba66298b6df8910cf5a31b87b5cb4a9</header_titles>
+        <hide_empty_sections>true</hide_empty_sections>
+        <name>Time Off</name>
+        <required_roles>x_aesc_db_time_off.employee,x_aesc_db_time_off.admin,x_aesc_db_time_off.manager</required_roles>
+        <search_config/>
+        <sys_class_name>sys_sg_applet_launcher</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:02</sys_created_on>
+        <sys_id>fba6629842df8910af116e2a9b2b6aa9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Time Off</sys_name>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name>sys_sg_applet_launcher_fba6629842df8910af116e2a9b2b6aa9</sys_update_name>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:02</sys_updated_on>
+        <title>Time Off</title>
+    </sys_sg_applet_launcher>
+</record_update>

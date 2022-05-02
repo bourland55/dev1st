@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Search results">7fa662988cdf89108022d05783ba1978</macroponent>
+        <name>searchTab</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[
+            function handler({api, event, imports, helpers}) {
+	helpers.screen.updateStatus({title: 'Search Results'});
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:48</sys_created_on>
+        <sys_id>33a66298e1df89101735c4ecdb5dce78</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>searchTab</sys_name>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name>sys_ux_client_script_33a66298e1df89101735c4ecdb5dce78</sys_update_name>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:48</sys_updated_on>
+        <type/>
+    </sys_ux_client_script>
+</record_update>

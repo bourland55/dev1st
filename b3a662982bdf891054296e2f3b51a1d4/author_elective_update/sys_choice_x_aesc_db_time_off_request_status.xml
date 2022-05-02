@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="status" table="x_aesc_db_time_off_request" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <name>x_aesc_db_time_off_request</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by/>
+            <sys_created_on/>
+            <sys_id>64e6aa981bdf8910fba942e8b04bcb2e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>status</sys_name>
+            <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+            <sys_update_name>sys_choice_x_aesc_db_time_off_request_status</sys_update_name>
+            <sys_updated_by>David.Bourland</sys_updated_by>
+            <sys_updated_on>2022-05-02 15:54:45</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Draft</label>
+            <language>en</language>
+            <name>x_aesc_db_time_off_request</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>David.Bourland</sys_created_by>
+            <sys_created_on>2022-05-02 15:54:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>33a662982bdf8910b6a7820cac738ac9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>David.Bourland</sys_updated_by>
+            <sys_updated_on>2022-05-02 15:54:45</sys_updated_on>
+            <value>draft</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Requested</label>
+            <language>en</language>
+            <name>x_aesc_db_time_off_request</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>David.Bourland</sys_created_by>
+            <sys_created_on>2022-05-02 15:54:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>73a66298bbdf89106c4a0e4d15c025c9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>David.Bourland</sys_updated_by>
+            <sys_updated_on>2022-05-02 15:54:45</sys_updated_on>
+            <value>requested</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Approved</label>
+            <language>en</language>
+            <name>x_aesc_db_time_off_request</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>David.Bourland</sys_created_by>
+            <sys_created_on>2022-05-02 15:54:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bfa66298abdf8910b1c1e1cc7ea650c8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>David.Bourland</sys_updated_by>
+            <sys_updated_on>2022-05-02 15:54:45</sys_updated_on>
+            <value>approved</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Rejected</label>
+            <language>en</language>
+            <name>x_aesc_db_time_off_request</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>David.Bourland</sys_created_by>
+            <sys_created_on>2022-05-02 15:54:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7fa662984ddf8910ee2683619fbf64c8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>David.Bourland</sys_updated_by>
+            <sys_updated_on>2022-05-02 15:54:45</sys_updated_on>
+            <value>rejected</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cancelled</label>
+            <language>en</language>
+            <name>x_aesc_db_time_off_request</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>David.Bourland</sys_created_by>
+            <sys_created_on>2022-05-02 15:54:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ffa66298fcdf8910ce4ab457983acec8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>David.Bourland</sys_updated_by>
+            <sys_updated_on>2022-05-02 15:54:45</sys_updated_on>
+            <value>cancelled</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

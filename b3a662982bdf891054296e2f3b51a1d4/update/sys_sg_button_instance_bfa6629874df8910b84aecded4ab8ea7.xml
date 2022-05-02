@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_button_instance">
+    <sys_sg_button_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <button display_value="Approve">f7a662984bdf8910cde624f0159e24a8</button>
+        <color_theme>primary</color_theme>
+        <description/>
+        <disable_offline>false</disable_offline>
+        <field_name/>
+        <icon/>
+        <label>Approve</label>
+        <location>footer</location>
+        <name>Approve</name>
+        <order>20</order>
+        <parent>3fa6629887df891025ff09f429f77fa7</parent>
+        <parent_table>sys_sg_screen</parent_table>
+        <sys_class_name>sys_sg_button_instance</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:55:01</sys_created_on>
+        <sys_id>bfa6629874df8910b84aecded4ab8ea7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approve</sys_name>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name>sys_sg_button_instance_bfa6629874df8910b84aecded4ab8ea7</sys_update_name>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:55:01</sys_updated_on>
+        <table>x_aesc_db_time_off_request</table>
+    </sys_sg_button_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=bfa6629874df8910b84aecded4ab8ea7"/>
+</record_update>

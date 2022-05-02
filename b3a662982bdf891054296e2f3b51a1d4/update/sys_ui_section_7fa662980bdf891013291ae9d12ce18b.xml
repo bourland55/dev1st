@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="7fa662980bdf891013291ae9d12ce18b" sys_domain="global" table="x_aesc_db_time_off_request" version="3" view="record_x_aesc_db_time_off">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>rejection_reason</element>
+            <position>0</position>
+            <sys_created_by>David.Bourland</sys_created_by>
+            <sys_created_on>2022-05-02 15:54:57</sys_created_on>
+            <sys_id>33a66298dfdf89100ffbbe94e7808388</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_aesc_db_time_off_request" sys_domain="global" view="ffa662981edf8910f273407a98f4f38b">7fa662980bdf891013291ae9d12ce18b</sys_ui_section>
+            <sys_updated_by>David.Bourland</sys_updated_by>
+            <sys_updated_on>2022-05-02 15:54:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <position>1</position>
+            <sys_created_by>David.Bourland</sys_created_by>
+            <sys_created_on>2022-05-02 15:54:57</sys_created_on>
+            <sys_id>fba6629870df89109adcbbf08e4e8d87</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_aesc_db_time_off_request" sys_domain="global" view="ffa662981edf8910f273407a98f4f38b">7fa662980bdf891013291ae9d12ce18b</sys_ui_section>
+            <sys_updated_by>David.Bourland</sys_updated_by>
+            <sys_updated_on>2022-05-02 15:54:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>time_off_reason</element>
+            <position>2</position>
+            <sys_created_by>David.Bourland</sys_created_by>
+            <sys_created_on>2022-05-02 15:54:57</sys_created_on>
+            <sys_id>bfa6629815df891007df415578467887</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_aesc_db_time_off_request" sys_domain="global" view="ffa662981edf8910f273407a98f4f38b">7fa662980bdf891013291ae9d12ce18b</sys_ui_section>
+            <sys_updated_by>David.Bourland</sys_updated_by>
+            <sys_updated_on>2022-05-02 15:54:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>3</position>
+            <sys_created_by>David.Bourland</sys_created_by>
+            <sys_created_on>2022-05-02 15:54:57</sys_created_on>
+            <sys_id>bba6629843df891025af5bb1db2f7287</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_aesc_db_time_off_request" sys_domain="global" view="ffa662981edf8910f273407a98f4f38b">7fa662980bdf891013291ae9d12ce18b</sys_ui_section>
+            <sys_updated_by>David.Bourland</sys_updated_by>
+            <sys_updated_on>2022-05-02 15:54:57</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>start_date</element>
+            <position>4</position>
+            <sys_created_by>David.Bourland</sys_created_by>
+            <sys_created_on>2022-05-02 15:54:57</sys_created_on>
+            <sys_id>3ba6629873df89104b0ca51a1942f087</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_aesc_db_time_off_request" sys_domain="global" view="ffa662981edf8910f273407a98f4f38b">7fa662980bdf891013291ae9d12ce18b</sys_ui_section>
+            <sys_updated_by>David.Bourland</sys_updated_by>
+            <sys_updated_on>2022-05-02 15:54:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>David.Bourland</sys_created_by>
+            <sys_created_on>2022-05-02 15:54:57</sys_created_on>
+            <sys_id>77a6629885df8910a37fc2a16129c487</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_aesc_db_time_off_request" sys_domain="global" view="ffa662981edf8910f273407a98f4f38b">7fa662980bdf891013291ae9d12ce18b</sys_ui_section>
+            <sys_updated_by>David.Bourland</sys_updated_by>
+            <sys_updated_on>2022-05-02 15:54:57</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>end_date</element>
+            <position>6</position>
+            <sys_created_by>David.Bourland</sys_created_by>
+            <sys_created_on>2022-05-02 15:54:57</sys_created_on>
+            <sys_id>f7a66298d8df891036d942048dc64d87</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_aesc_db_time_off_request" sys_domain="global" view="ffa662981edf8910f273407a98f4f38b">7fa662980bdf891013291ae9d12ce18b</sys_ui_section>
+            <sys_updated_by>David.Bourland</sys_updated_by>
+            <sys_updated_on>2022-05-02 15:54:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>7</position>
+            <sys_created_by>David.Bourland</sys_created_by>
+            <sys_created_on>2022-05-02 15:54:57</sys_created_on>
+            <sys_id>7ba6629854df8910dd2a03728cd0b187</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_aesc_db_time_off_request" sys_domain="global" view="ffa662981edf8910f273407a98f4f38b">7fa662980bdf891013291ae9d12ce18b</sys_ui_section>
+            <sys_updated_by>David.Bourland</sys_updated_by>
+            <sys_updated_on>2022-05-02 15:54:57</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_aesc_db_time_off_request</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>David.Bourland</sys_created_by>
+            <sys_created_on>2022-05-02 15:54:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7fa662980bdf891013291ae9d12ce18b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_aesc_db_time_off_request</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+            <sys_update_name>sys_ui_section_7fa662980bdf891013291ae9d12ce18b</sys_update_name>
+            <sys_updated_by>David.Bourland</sys_updated_by>
+            <sys_updated_on>2022-05-02 15:54:57</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Record (x_aesc_db_time_off)" name="record_x_aesc_db_time_off">ffa662981edf8910f273407a98f4f38b</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

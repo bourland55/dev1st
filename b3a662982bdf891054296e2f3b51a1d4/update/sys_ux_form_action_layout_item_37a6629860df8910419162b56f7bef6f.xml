@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action_layout_item">
+    <sys_ux_form_action_layout_item action="INSERT_OR_UPDATE">
+        <action display_value="Decline">3ba66298ffdf8910081d8540aa27b96f</action>
+        <active>true</active>
+        <color/>
+        <description/>
+        <item_type>action</item_type>
+        <label>Decline</label>
+        <layout_group/>
+        <name>decline</name>
+        <order>0</order>
+        <overflow>false</overflow>
+        <sys_class_name>sys_ux_form_action_layout_item</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:42</sys_created_on>
+        <sys_id>37a6629860df8910419162b56f7bef6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Decline</sys_name>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name>sys_ux_form_action_layout_item_37a6629860df8910419162b56f7bef6f</sys_update_name>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:42</sys_updated_on>
+        <table>x_aesc_db_time_off_request</table>
+    </sys_ux_form_action_layout_item>
+</record_update>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <name>headerConfigId</name>
+        <page display_value="DB Time Off portal">37a6629880df891066a338af10fdccd3</page>
+        <required_translations>[]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>bfa662986ddf8910a6d11996e7a4ef68</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>headerConfigId</sys_name>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name>sys_ux_page_property_bfa662986ddf8910a6d11996e7a4ef68</sys_update_name>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:32</sys_updated_on>
+        <type>string</type>
+        <unique_name>x_aesc_db_time_off.37a6629880df891066a338af10fdccd3.root.headerConfigId</unique_name>
+        <value>f3a662980fdf89102bbefc0ad6d7856f</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=bfa662986ddf8910a6d11996e7a4ef68"/>
+</record_update>

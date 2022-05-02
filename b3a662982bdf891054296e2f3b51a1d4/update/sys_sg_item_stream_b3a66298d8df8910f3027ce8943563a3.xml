@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_stream">
+    <sys_sg_item_stream action="INSERT_OR_UPDATE">
+        <data_item display_value="Recent Requests Data Item">33a66298dddf8910ce717040c76581a7</data_item>
+        <interleaved_field/>
+        <name>Recent Requests Item Stream</name>
+        <sys_class_name>sys_sg_item_stream</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:44</sys_created_on>
+        <sys_id>b3a66298d8df8910f3027ce8943563a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Recent Requests Item Stream</sys_name>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name>sys_sg_item_stream_b3a66298d8df8910f3027ce8943563a3</sys_update_name>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:44</sys_updated_on>
+        <table>x_aesc_db_time_off_request</table>
+    </sys_sg_item_stream>
+</record_update>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category display_value="Administration">647e6524c0a80a080010856a87e15ce2</category>
+        <description>Schedule employee vacations and time-off</description>
+        <device_type>browser</device_type>
+        <hint>Schedule employee vacations and time-off</hint>
+        <name/>
+        <order/>
+        <roles>x_aesc_db_time_off.employee,x_aesc_db_time_off.admin,x_aesc_db_time_off.manager</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>73a66298a8df89102a7e579075e466ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DB Time Off</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name>sys_app_application_73a66298a8df89102a7e579075e466ca</sys_update_name>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:25</sys_updated_on>
+        <title>DB Time Off</title>
+        <view_name/>
+    </sys_app_application>
+</record_update>

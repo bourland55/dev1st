@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_screen_param_map">
+    <sys_sg_screen_param_map action="INSERT_OR_UPDATE">
+        <item_parameter display_value="Approved or Rejected">bba6629886df8910e12ca04717fe43a4</item_parameter>
+        <screen display_value="Time Off Requests">bba66298bcdf8910408cc5f9b2daf1a8</screen>
+        <sys_class_name>sys_sg_screen_param_map</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:12</sys_created_on>
+        <sys_id>37a6629827df89100712824967766ea0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>bba6629886df8910e12ca04717fe43a4</sys_name>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name>sys_sg_screen_param_map_37a6629827df89100712824967766ea0</sys_update_name>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:12</sys_updated_on>
+        <ui_parameter display_value="URL">3ba66298ebdf89100d9f15803953bba1</ui_parameter>
+    </sys_sg_screen_param_map>
+</record_update>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_theme">
+    <sys_ux_theme action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <name>Button test</name>
+        <parent display_value="Default">a309795273230010fd843c78caf6a724</parent>
+        <sys_class_name>sys_ux_theme</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f3a6629880df8910829c53868050c166</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Button test</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name>sys_ux_theme_f3a6629880df8910829c53868050c166</sys_update_name>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:30</sys_updated_on>
+        <theme>{&#13;
+  "--now-button--border-radius": "25px",&#13;
+  "--now-button--primary--background-color": "0,48,89",&#13;
+  "--now-button--primary--background-color--hover": "0,0,0",&#13;
+  "--now-canvas-header-container--background-color": "41,62,64"&#13;
+}</theme>
+    </sys_ux_theme>
+</record_update>

@@ -1,0 +1,1850 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-trackapptemplates-12-11-2020</compiler_build>
+        <copied_from>7dc36b7960822010f877238e25f3b75a</copied_from>
+        <copied_from_name>Time off request - notifications</copied_from_name>
+        <description>This flow will trigger when a time off request is submitted for approval.</description>
+        <internal_name>x_aesc_db_time_off.time_off_request_send</internal_name>
+        <label_cache>[{"name":"d3ea8141-274c-4f52-a2f5-4795a7518578.table_name","label":"10➛Time Off Request Table","reference":"x_snc_time_off_request","reference_display":"Time Off Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d3ea8141-274c-4f52-a2f5-4795a7518578.record","label":"10➛Time Off Request Record","reference":"x_snc_time_off_request","reference_display":"Time Off Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"466d81aa-ebc9-40d1-871a-35152495c5e2.table_name","label":"5➛Time Off Request Table","reference":"x_snc_time_off_request","reference_display":"Time Off Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"466d81aa-ebc9-40d1-871a-35152495c5e2.record","label":"5➛Time Off Request Record","reference":"x_snc_time_off_request","reference_display":"Time Off Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.requested_by.manager","label":"Trigger➛Time Off Request Record➛Requested by➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"},{"name":"Created or Updated_1.current","label":"Trigger➛Time Off Request Record","reference":"x_snc_time_off_request","reference_display":"Time Off Request","type":"reference","base_type":"reference","attributes":{}},{"name":"6518fc7f-9185-4290-b006-d2a849f8a70d.approval_state","label":"3➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.status","label":"Trigger➛Time Off Request Record➛Status","reference":"","reference_display":"Status","type":"choice","base_type":"choice","parent_table_name":"x_snc_time_off_request","column_name":"status"},{"name":"e6ae8eec-6172-47cd-ad00-94b83085eaed.record","label":"8➛Time Off Request Record","reference":"x_snc_time_off_request","reference_display":"Time Off Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e6ae8eec-6172-47cd-ad00-94b83085eaed.table_name","label":"8➛Time Off Request Table","reference":"x_snc_time_off_request","reference_display":"Time Off Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2ae32da1-e6cb-4818-a7b3-aa970605fcb6.state","label":"3➛State","reference_display":"State","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}}]</label_cache>
+        <master_snapshot>33a6629805df89107895d4e1b9cfb9bd</master_snapshot>
+        <name>Time off request -send notifications</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id>ffa66298c1df8910f72b5a58bb8a6dbc</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b3a6629857df89107be151389816b1bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Time off request -send notifications</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name>sys_hub_flow_b3a6629857df89107be151389816b1bd</sys_update_name>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=b3a6629857df89107be151389816b1bd"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b3a6629857df89107be151389816b1bd"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_aesc_db_time_off_request">statusVALCHANGES<item display_value="-- None --" endquery="false" field="status" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ffa66298c1df8910f72b5a58bb8a6dbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <table>x_aesc_db_time_off_request</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"table":"sys_trigger_runner_mapping","id":"77a6629826df89109bd67e2c37fd30bd","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
+        <identifier>b3a6629857df89107be151389816b1bd</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>77a6629826df89109bd67e2c37fd30bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <trigger display_value="">ffa66298c1df8910f72b5a58bb8a6dbc</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_json_chunk action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAGXLWwqAIBBA0b3MdytwKxGD5fggGUFHLKK99yAo6Pce7ga5MtqYGgYGBaOeZpdTZQPdTc0TYy2UMYYioPrh0wuJBHbXl8T/jpc1r48mRlqE2JA5u9WxEOwH5v2lw4YAAAA=</data>
+        <document_id>77a6629826df89109bd67e2c37fd30bd</document_id>
+        <field>trigger_runner</field>
+        <length>144</length>
+        <position>0</position>
+        <source_table>sys_trigger_runner_mapping</source_table>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>73a66298b3df891045508f6b800f65bd</sys_id>
+    </sys_json_chunk>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=b3a6629857df89107be151389816b1bd^sys_idNOT IN77a6629826df89109bd67e2c37fd30bd"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=b3a6629857df89107be151389816b1bd^sys_idNOT INbfa66298a4df8910d0394d7c9f13cebc"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Time off request -send notifications">b3a6629857df89107be151389816b1bd</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>bfa66298a4df8910d0394d7c9f13cebc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=bfa66298a4df8910d0394d7c9f13cebc"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>bfa66298a4df8910d0394d7c9f13cebc</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>7ba66298a2df891092ab010af85cfebc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <value>unique_changes</value>
+        <variable display_value="Run Trigger">2b9def50c31132002841b63b12d3ae5b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>bfa66298a4df8910d0394d7c9f13cebc</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>bba66298b1df89104f477eca5ea39ebc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <value>statusVALCHANGES</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>bfa66298a4df8910d0394d7c9f13cebc</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>fba6629835df8910b827a337ce697fbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <value>x_aesc_db_time_off_request</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_a45d9180c32222002841b63b12d3aea7^id=bfa66298a4df8910d0394d7c9f13cebc"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=b3a6629857df89107be151389816b1bd"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=b3a6629857df89107be151389816b1bd^sys_idNOT IN7fa6629821df8910729a379d3a9633bc"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>b3a6629857df89107be151389816b1bd</id>
+        <name>Time off request -send notifications</name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>7fa6629821df8910729a379d3a9633bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=7fa6629821df8910729a379d3a9633bc"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=b3a6629857df89107be151389816b1bd^sys_idNOT IN3ba66298b2df891045032ae9ce7e92bc,3fa6629829df891076d9064ebaa97fbc,b7a662982ddf8910560f70beb1cd76bc"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Time off request -send notifications">b3a6629857df89107be151389816b1bd</model>
+        <model_id>b3a6629857df89107be151389816b1bd</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b3a6629857df89107be151389816b1bd</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>3ba66298b2df891045032ae9ce7e92bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Time off request -send notifications">b3a6629857df89107be151389816b1bd</model>
+        <model_id>b3a6629857df89107be151389816b1bd</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b3a6629857df89107be151389816b1bd</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>3fa6629829df891076d9064ebaa97fbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDa24bb0688180bc10ef5c74355bbaf281,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Time off request -send notifications">b3a6629857df89107be151389816b1bd</model>
+        <model_id>b3a6629857df89107be151389816b1bd</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b3a6629857df89107be151389816b1bd</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>b7a662982ddf8910560f70beb1cd76bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=b3a6629857df89107be151389816b1bd"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b3a6629857df89107be151389816b1bd"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=b3a6629857df89107be151389816b1bd^sys_idNOT IN33a662986ddf891073fd79e9944a37bc,37a662985cdf89109a517e3046d67cbb,f7a662987cdf89102cd3d49a36e672bc,fba662982adf8910d1cfba76b4e5e6bb"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <comment/>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Time off request -send notifications">b3a6629857df89107be151389816b1bd</flow>
+        <order>2</order>
+        <parent_ui_id>e1799e77-8eb5-4b80-8ec2-e97ca9847518</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>33a662986ddf891073fd79e9944a37bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <ui_id>d1a1a300-da65-4187-95ff-9ede8435c13d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=33a662986ddf891073fd79e9944a37bc"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>33a662986ddf891073fd79e9944a37bc</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>b3a662985cdf8910855daee7010f1cbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <value>f7a6629826df8910bfd26b70762fb5ca</value>
+        <variable display_value="Notification">418dd9f10f11101051218e8ebc767e38</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>33a662986ddf891073fd79e9944a37bc</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>f3a6629822df8910d1be6930b5699bbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <value>x_aesc_db_time_off_request</value>
+        <variable display_value="Table">818dd9f10f11101051218e8ebc767e32</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=33a662986ddf891073fd79e9944a37bc"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>33a662986ddf891073fd79e9944a37bc</id>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>73a66298ffdf8910d9b5194cb4ffb6bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=33a662986ddf891073fd79e9944a37bc"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=33a662986ddf891073fd79e9944a37bc"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Time off request -send notifications">b3a6629857df89107be151389816b1bd</flow>
+        <order>6</order>
+        <parent_ui_id>e3da2621-753e-48e6-9e0d-d64ad934bf9d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>37a662985cdf89109a517e3046d67cbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <ui_id>b4ac89cd-31ab-4af7-836c-81d92402e98a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=37a662985cdf89109a517e3046d67cbb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>37a662985cdf89109a517e3046d67cbb</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>3ba66298efdf89100f50ce32bb2e93bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <value>b7a6629873df8910a79b9f4d47530cca</value>
+        <variable display_value="Notification">418dd9f10f11101051218e8ebc767e38</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>37a662985cdf89109a517e3046d67cbb</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>b7a6629862df89108e8bd581656416bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <value>x_aesc_db_time_off_request</value>
+        <variable display_value="Table">818dd9f10f11101051218e8ebc767e32</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=37a662985cdf89109a517e3046d67cbb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>37a662985cdf89109a517e3046d67cbb</id>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>77a6629843df89107ee894fc377b4dbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=37a662985cdf89109a517e3046d67cbb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=37a662985cdf89109a517e3046d67cbb"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Time off request -send notifications">b3a6629857df89107be151389816b1bd</flow>
+        <order>4</order>
+        <parent_ui_id>71b430ff-ee2c-4033-9aa2-1b9f391caef3</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>f7a662987cdf89102cd3d49a36e672bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <ui_id>5cdd2460-035b-42fd-a445-e38912c211d7</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f7a662987cdf89102cd3d49a36e672bc"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f7a662987cdf89102cd3d49a36e672bc</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>3fa66298cedf8910d1369b5e9477c3bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <value>x_aesc_db_time_off_request</value>
+        <variable display_value="Table">818dd9f10f11101051218e8ebc767e32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f7a662987cdf89102cd3d49a36e672bc</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>7fa662989fdf8910ef164e1eb657cdbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <value>77a66298fadf8910064ef7a6d1d1d2ca</value>
+        <variable display_value="Notification">418dd9f10f11101051218e8ebc767e38</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f7a662987cdf89102cd3d49a36e672bc"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>f7a662987cdf89102cd3d49a36e672bc</id>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>77a6629879df891035db88449de36ebc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f7a662987cdf89102cd3d49a36e672bc"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f7a662987cdf89102cd3d49a36e672bc"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Time off request -send notifications">b3a6629857df89107be151389816b1bd</flow>
+        <order>8</order>
+        <parent_ui_id>0dea2930-3b52-4821-a9a1-853859ca9d0a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>fba662982adf8910d1cfba76b4e5e6bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <ui_id>2bf59398-1433-4503-9022-d8bc45eb3a37</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=fba662982adf8910d1cfba76b4e5e6bb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fba662982adf8910d1cfba76b4e5e6bb</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>37a66298dadf8910740dcc7e618eb8bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <value>33a662984fdf8910f65403c803505fcb</value>
+        <variable display_value="Notification">418dd9f10f11101051218e8ebc767e38</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fba662982adf8910d1cfba76b4e5e6bb</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>ffa66298cadf89103957ec12ca2b80bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <value>x_aesc_db_time_off_request</value>
+        <variable display_value="Table">818dd9f10f11101051218e8ebc767e32</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=fba662982adf8910d1cfba76b4e5e6bb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>fba662982adf8910d1cfba76b4e5e6bb</id>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>bfa6629814df89104c79a49ae93ae4bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=fba662982adf8910d1cfba76b4e5e6bb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fba662982adf8910d1cfba76b4e5e6bb"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=b3a6629857df89107be151389816b1bd"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=b3a6629857df89107be151389816b1bd^sys_idNOT IN3fa662981fdf8910ba7e418a3898ceba,73a6629883df8910f530ac6f40cfd0bb,b3a662988adf891019331823adeb59bb,bba66298c1df89101af4ddee0c6166bb"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">7ba662988cdf8910d297300c33644bba</block>
+        <comment/>
+        <connected_to>e1799e77-8eb5-4b80-8ec2-e97ca9847518</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Time off request -send notifications">b3a6629857df89107be151389816b1bd</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>3fa662981fdf8910ba7e418a3898ceba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <ui_id>e3da2621-753e-48e6-9e0d-d64ad934bf9d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=3fa662981fdf8910ba7e418a3898ceba"/>
+    <sys_element_mapping action="delete_multiple" query="id=3fa662981fdf8910ba7e418a3898ceba"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>3fa662981fdf8910ba7e418a3898ceba</id>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>ffa66298e3df89100e9c758857d098ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{Created or Updated_1.current.status}}=rejected</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=3fa662981fdf8910ba7e418a3898ceba"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3fa662981fdf8910ba7e418a3898ceba"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">bfa6629860df8910393c00e87289d5ba</block>
+        <comment/>
+        <connected_to>e1799e77-8eb5-4b80-8ec2-e97ca9847518</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Time off request -send notifications">b3a6629857df89107be151389816b1bd</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>73a6629883df8910f530ac6f40cfd0bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <ui_id>0dea2930-3b52-4821-a9a1-853859ca9d0a</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=73a6629883df8910f530ac6f40cfd0bb"/>
+    <sys_element_mapping action="delete_multiple" query="id=73a6629883df8910f530ac6f40cfd0bb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>73a6629883df8910f530ac6f40cfd0bb</id>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>fba66298d1df89108664df1a239c0bba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{Created or Updated_1.current.status}}=cancelled</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=73a6629883df8910f530ac6f40cfd0bb"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=73a6629883df8910f530ac6f40cfd0bb"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">7ba66298d9df8910f61c9322a735c8bb</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Time off request -send notifications">b3a6629857df89107be151389816b1bd</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>b3a662988adf891019331823adeb59bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <ui_id>e1799e77-8eb5-4b80-8ec2-e97ca9847518</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=b3a662988adf891019331823adeb59bb"/>
+    <sys_element_mapping action="delete_multiple" query="id=b3a662988adf891019331823adeb59bb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>b3a662988adf891019331823adeb59bb</id>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>33a6629831df8910f348164776a0a3bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Created or Updated_1.current.status}}=requested</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=b3a662988adf891019331823adeb59bb"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b3a662988adf891019331823adeb59bb"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">f7a662980cdf89103b1c6ecf5ce404bb</block>
+        <comment/>
+        <connected_to>e1799e77-8eb5-4b80-8ec2-e97ca9847518</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Time off request -send notifications">b3a6629857df89107be151389816b1bd</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>bba66298c1df89101af4ddee0c6166bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <ui_id>71b430ff-ee2c-4033-9aa2-1b9f391caef3</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=bba66298c1df89101af4ddee0c6166bb"/>
+    <sys_element_mapping action="delete_multiple" query="id=bba66298c1df89101af4ddee0c6166bb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>bba66298c1df89101af4ddee0c6166bb</id>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>f3a662984edf8910c4d283dc0c066dbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{Created or Updated_1.current.status}}=approved</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=bba66298c1df89101af4ddee0c6166bb"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=bba66298c1df89101af4ddee0c6166bb"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=b3a6629857df89107be151389816b1bd"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=b3a6629857df89107be151389816b1bd"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_b3a6629857df89107be151389816b1bd^sys_idNOT IN3ba662986bdf89105e977b51250953ba,7fa6629856df8910ecb767a6292b09ba,bba662989fdf89107e0149fb03a311ba"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b3a6629857df89107be151389816b1bd</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>3ba662986bdf89105e977b51250953ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Changed Fields</sys_name>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_a2571e803b407c103b90ec2c12ec4b45_changed_fields_en</sys_update_name>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b3a6629857df89107be151389816b1bd</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>7fa6629856df8910ecb767a6292b09ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table Name</sys_name>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_a2571e803b407c103b90ec2c12ec4b45_table_name_en</sys_update_name>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b3a6629857df89107be151389816b1bd</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:28</sys_created_on>
+        <sys_id>bba662989fdf89107e0149fb03a311ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record</sys_name>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_a2571e803b407c103b90ec2c12ec4b45_current_en</sys_update_name>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:28</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_b3a6629857df89107be151389816b1bd"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_b3a6629857df89107be151389816b1bd"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_b3a6629857df89107be151389816b1bd"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=b3a6629857df89107be151389816b1bd^sys_idNOT IN73a66298c5df8910a9ab5ab3b726d3ba"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerUniqueChange</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"62571e800f407c10ee4156f91e423148","name":"plan"}}</plan>
+        <plan_id>b3a6629857df89107be151389816b1bd</plan_id>
+        <snapshot>37a66298eedf89104e81208748c9d6ba</snapshot>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>73a66298c5df8910a9ab5ab3b726d3ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <trigger display_value="">ffa66298c1df8910f72b5a58bb8a6dbc</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=b3a6629857df89107be151389816b1bd"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This flow will trigger when a time off request is submitted for approval.</description>
+        <internal_name>x_aesc_db_time_off.time_off_request_send</internal_name>
+        <label_cache>[{"name":"d3ea8141-274c-4f52-a2f5-4795a7518578.table_name","label":"10➛Time Off Request Table","reference":"x_snc_time_off_request","reference_display":"Time Off Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d3ea8141-274c-4f52-a2f5-4795a7518578.record","label":"10➛Time Off Request Record","reference":"x_snc_time_off_request","reference_display":"Time Off Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"466d81aa-ebc9-40d1-871a-35152495c5e2.table_name","label":"5➛Time Off Request Table","reference":"x_snc_time_off_request","reference_display":"Time Off Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"466d81aa-ebc9-40d1-871a-35152495c5e2.record","label":"5➛Time Off Request Record","reference":"x_snc_time_off_request","reference_display":"Time Off Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.requested_by.manager","label":"Trigger➛Time Off Request Record➛Requested by➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"},{"name":"Created or Updated_1.current","label":"Trigger➛Time Off Request Record","reference":"x_snc_time_off_request","reference_display":"Time Off Request","type":"reference","base_type":"reference","attributes":{}},{"name":"6518fc7f-9185-4290-b006-d2a849f8a70d.approval_state","label":"3➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.status","label":"Trigger➛Time Off Request Record➛Status","reference":"","reference_display":"Status","type":"choice","base_type":"choice","parent_table_name":"x_snc_time_off_request","column_name":"status"},{"name":"e6ae8eec-6172-47cd-ad00-94b83085eaed.record","label":"8➛Time Off Request Record","reference":"x_snc_time_off_request","reference_display":"Time Off Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e6ae8eec-6172-47cd-ad00-94b83085eaed.table_name","label":"8➛Time Off Request Table","reference":"x_snc_time_off_request","reference_display":"Time Off Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2ae32da1-e6cb-4818-a7b3-aa970605fcb6.state","label":"3➛State","reference_display":"State","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}}]</label_cache>
+        <master>true</master>
+        <name>Time off request -send notifications</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Time off request -send notifications">b3a6629857df89107be151389816b1bd</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>33a6629805df89107895d4e1b9cfb9bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=33a6629805df89107895d4e1b9cfb9bd"/>
+    <sys_variable_value action="delete_multiple" query="document_key=33a6629805df89107895d4e1b9cfb9bd"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=33a6629805df89107895d4e1b9cfb9bd^sys_idNOT INf3a6629831df891033f4ab39f4cbebba"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Time off request -send notifications">33a6629805df89107895d4e1b9cfb9bd</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>f3a6629831df891033f4ab39f4cbebba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f3a6629831df891033f4ab39f4cbebba"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>f3a6629831df891033f4ab39f4cbebba</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>77a6629809df8910470ab215fa7cfcba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <value>unique_changes</value>
+        <variable display_value="Run Trigger">2b9def50c31132002841b63b12d3ae5b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>f3a6629831df891033f4ab39f4cbebba</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>b7a6629896df891048764ff94ca670ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <value>statusVALCHANGES</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>f3a6629831df891033f4ab39f4cbebba</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>f7a6629830df8910cd570e155dac5aba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <value>x_aesc_db_time_off_request</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_a45d9180c32222002841b63b12d3aea7^id=f3a6629831df891033f4ab39f4cbebba"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=33a6629805df89107895d4e1b9cfb9bd"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=33a6629805df89107895d4e1b9cfb9bd^sys_idNOT INb3a6629828df8910367b8db4444279ba"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>33a6629805df89107895d4e1b9cfb9bd</id>
+        <name>Time off request -send notifications</name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>b3a6629828df8910367b8db4444279ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=b3a6629828df8910367b8db4444279ba"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=33a6629805df89107895d4e1b9cfb9bd^sys_idNOT IN33a6629815df89101a64dadcf1f8ceba,fba6629830df8910d6f80309db7d0cb9,ffa6629814df891066de2472914d55b9"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDa24bb0688180bc10ef5c74355bbaf281,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Time off request -send notifications">33a6629805df89107895d4e1b9cfb9bd</model>
+        <model_id>33a6629805df89107895d4e1b9cfb9bd</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_33a6629805df89107895d4e1b9cfb9bd</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>33a6629815df89101a64dadcf1f8ceba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Time off request -send notifications">33a6629805df89107895d4e1b9cfb9bd</model>
+        <model_id>33a6629805df89107895d4e1b9cfb9bd</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_33a6629805df89107895d4e1b9cfb9bd</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>fba6629830df8910d6f80309db7d0cb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Time off request -send notifications">33a6629805df89107895d4e1b9cfb9bd</model>
+        <model_id>33a6629805df89107895d4e1b9cfb9bd</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_33a6629805df89107895d4e1b9cfb9bd</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>ffa6629814df891066de2472914d55b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=33a6629805df89107895d4e1b9cfb9bd"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=33a6629805df89107895d4e1b9cfb9bd"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=33a6629805df89107895d4e1b9cfb9bd^sys_idNOT IN77a6629852df8910affae28b16229db9,7ba662983fdf891056f9e6763347a6b9,b7a662980edf8910a3a7ccf2dacf95b9,ffa6629861df891052e1e8c62033f6b8"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <comment/>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Time off request -send notifications">33a6629805df89107895d4e1b9cfb9bd</flow>
+        <order>6</order>
+        <parent_ui_id>e3da2621-753e-48e6-9e0d-d64ad934bf9d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>77a6629852df8910affae28b16229db9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <ui_id>b4ac89cd-31ab-4af7-836c-81d92402e98a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=77a6629852df8910affae28b16229db9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>77a6629852df8910affae28b16229db9</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>3ba66298e9df891033a8302aece9e1b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <value>b7a6629873df8910a79b9f4d47530cca</value>
+        <variable display_value="Notification">418dd9f10f11101051218e8ebc767e38</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>77a6629852df8910affae28b16229db9</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>3fa66298e2df891031920795eb04b0b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <value>x_aesc_db_time_off_request</value>
+        <variable display_value="Table">818dd9f10f11101051218e8ebc767e32</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=77a6629852df8910affae28b16229db9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>77a6629852df8910affae28b16229db9</id>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>bba662988fdf89106c63c0dc50aa8eb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=77a6629852df8910affae28b16229db9"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=77a6629852df8910affae28b16229db9"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <comment/>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Time off request -send notifications">33a6629805df89107895d4e1b9cfb9bd</flow>
+        <order>2</order>
+        <parent_ui_id>e1799e77-8eb5-4b80-8ec2-e97ca9847518</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>7ba662983fdf891056f9e6763347a6b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <ui_id>d1a1a300-da65-4187-95ff-9ede8435c13d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7ba662983fdf891056f9e6763347a6b9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7ba662983fdf891056f9e6763347a6b9</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>7fa66298cddf8910894b92168baf25b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <value>x_aesc_db_time_off_request</value>
+        <variable display_value="Table">818dd9f10f11101051218e8ebc767e32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7ba662983fdf891056f9e6763347a6b9</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>f7a66298efdf8910f389c361947885b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <value>f7a6629826df8910bfd26b70762fb5ca</value>
+        <variable display_value="Notification">418dd9f10f11101051218e8ebc767e38</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7ba662983fdf891056f9e6763347a6b9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>7ba662983fdf891056f9e6763347a6b9</id>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>bfa66298cddf8910c7498f32c65ba1b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7ba662983fdf891056f9e6763347a6b9"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7ba662983fdf891056f9e6763347a6b9"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <comment/>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Time off request -send notifications">33a6629805df89107895d4e1b9cfb9bd</flow>
+        <order>8</order>
+        <parent_ui_id>0dea2930-3b52-4821-a9a1-853859ca9d0a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>b7a662980edf8910a3a7ccf2dacf95b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <ui_id>2bf59398-1433-4503-9022-d8bc45eb3a37</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b7a662980edf8910a3a7ccf2dacf95b9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b7a662980edf8910a3a7ccf2dacf95b9</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>7fa6629889df8910a5accf3b3e7522b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <value>33a662984fdf8910f65403c803505fcb</value>
+        <variable display_value="Notification">418dd9f10f11101051218e8ebc767e38</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b7a662980edf8910a3a7ccf2dacf95b9</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>fba662984ddf8910a251440ad691e9b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <value>x_aesc_db_time_off_request</value>
+        <variable display_value="Table">818dd9f10f11101051218e8ebc767e32</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b7a662980edf8910a3a7ccf2dacf95b9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>b7a662980edf8910a3a7ccf2dacf95b9</id>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>bba66298d8df8910e3f3545c1f18ceb8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b7a662980edf8910a3a7ccf2dacf95b9"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b7a662980edf8910a3a7ccf2dacf95b9"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <comment/>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Time off request -send notifications">33a6629805df89107895d4e1b9cfb9bd</flow>
+        <order>4</order>
+        <parent_ui_id>71b430ff-ee2c-4033-9aa2-1b9f391caef3</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>ffa6629861df891052e1e8c62033f6b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <ui_id>5cdd2460-035b-42fd-a445-e38912c211d7</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ffa6629861df891052e1e8c62033f6b8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ffa6629861df891052e1e8c62033f6b8</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>33a66298e0df8910b542a78df7cec8b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <value>x_aesc_db_time_off_request</value>
+        <variable display_value="Table">818dd9f10f11101051218e8ebc767e32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ffa6629861df891052e1e8c62033f6b8</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>3fa66298dddf89104552dc72044a59b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <value>77a66298fadf8910064ef7a6d1d1d2ca</value>
+        <variable display_value="Notification">418dd9f10f11101051218e8ebc767e38</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ffa6629861df891052e1e8c62033f6b8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>ffa6629861df891052e1e8c62033f6b8</id>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>73a662984cdf8910e4f30218c51e8fb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ffa6629861df891052e1e8c62033f6b8"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ffa6629861df891052e1e8c62033f6b8"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=33a6629805df89107895d4e1b9cfb9bd"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=33a6629805df89107895d4e1b9cfb9bd^sys_idNOT IN37a6629854df89108f7de127bc1d28b9,3ba6629831df8910ad430d6fe2295fb8,bfa66298a1df8910e788139162af38b8,f7a662984ddf8910ad668f7ba36395b8"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">7ba66298d9df8910f61c9322a735c8bb</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Time off request -send notifications">33a6629805df89107895d4e1b9cfb9bd</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>37a6629854df89108f7de127bc1d28b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <ui_id>e1799e77-8eb5-4b80-8ec2-e97ca9847518</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=37a6629854df89108f7de127bc1d28b9"/>
+    <sys_element_mapping action="delete_multiple" query="id=37a6629854df89108f7de127bc1d28b9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>37a6629854df89108f7de127bc1d28b9</id>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>b3a662987cdf8910fced1f8709115cb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Created or Updated_1.current.status}}=requested</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=37a6629854df89108f7de127bc1d28b9"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=37a6629854df89108f7de127bc1d28b9"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">7ba662988cdf8910d297300c33644bba</block>
+        <comment/>
+        <connected_to>e1799e77-8eb5-4b80-8ec2-e97ca9847518</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Time off request -send notifications">33a6629805df89107895d4e1b9cfb9bd</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>3ba6629831df8910ad430d6fe2295fb8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <ui_id>e3da2621-753e-48e6-9e0d-d64ad934bf9d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=3ba6629831df8910ad430d6fe2295fb8"/>
+    <sys_element_mapping action="delete_multiple" query="id=3ba6629831df8910ad430d6fe2295fb8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>3ba6629831df8910ad430d6fe2295fb8</id>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>b7a6629810df891080f66e57f34895b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{Created or Updated_1.current.status}}=rejected</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=3ba6629831df8910ad430d6fe2295fb8"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3ba6629831df8910ad430d6fe2295fb8"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">f7a662980cdf89103b1c6ecf5ce404bb</block>
+        <comment/>
+        <connected_to>e1799e77-8eb5-4b80-8ec2-e97ca9847518</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Time off request -send notifications">33a6629805df89107895d4e1b9cfb9bd</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>bfa66298a1df8910e788139162af38b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <ui_id>71b430ff-ee2c-4033-9aa2-1b9f391caef3</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=bfa66298a1df8910e788139162af38b8"/>
+    <sys_element_mapping action="delete_multiple" query="id=bfa66298a1df8910e788139162af38b8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>bfa66298a1df8910e788139162af38b8</id>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>f3a66298cedf89104de8e15c6d1f57b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{Created or Updated_1.current.status}}=approved</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=bfa66298a1df8910e788139162af38b8"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=bfa66298a1df8910e788139162af38b8"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">bfa6629860df8910393c00e87289d5ba</block>
+        <comment/>
+        <connected_to>e1799e77-8eb5-4b80-8ec2-e97ca9847518</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Time off request -send notifications">33a6629805df89107895d4e1b9cfb9bd</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>f7a662984ddf8910ad668f7ba36395b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <ui_id>0dea2930-3b52-4821-a9a1-853859ca9d0a</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=f7a662984ddf8910ad668f7ba36395b8"/>
+    <sys_element_mapping action="delete_multiple" query="id=f7a662984ddf8910ad668f7ba36395b8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>f7a662984ddf8910ad668f7ba36395b8</id>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>77a66298a3df891087b7352feb6aeeb8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{Created or Updated_1.current.status}}=cancelled</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=f7a662984ddf8910ad668f7ba36395b8"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f7a662984ddf8910ad668f7ba36395b8"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=33a6629805df89107895d4e1b9cfb9bd"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=33a6629805df89107895d4e1b9cfb9bd"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_33a6629805df89107895d4e1b9cfb9bd^sys_idNOT IN37a6629856df89106e05c30227d740b8,7ba662987adf8910512fa760852ebab8,f3a662982edf8910e2a226fc985d8fb8"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_33a6629805df89107895d4e1b9cfb9bd</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>37a6629856df89106e05c30227d740b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table Name</sys_name>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_62571e8026407c104c9dc50e2228ca45_table_name_en</sys_update_name>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_33a6629805df89107895d4e1b9cfb9bd</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>7ba662987adf8910512fa760852ebab8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record</sys_name>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_62571e8026407c104c9dc50e2228ca45_current_en</sys_update_name>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_33a6629805df89107895d4e1b9cfb9bd</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:29</sys_created_on>
+        <sys_id>f3a662982edf8910e2a226fc985d8fb8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Changed Fields</sys_name>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_62571e8026407c104c9dc50e2228ca45_changed_fields_en</sys_update_name>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_33a6629805df89107895d4e1b9cfb9bd"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_33a6629805df89107895d4e1b9cfb9bd"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_33a6629805df89107895d4e1b9cfb9bd"/>
+    <sys_hub_flow action="update">
+        <sys_id>b3a6629857df89107be151389816b1bd</sys_id>
+        <latest_snapshot>33a6629805df89107895d4e1b9cfb9bd</latest_snapshot>
+    </sys_hub_flow>
+</record_update>

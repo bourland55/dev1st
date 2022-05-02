@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="DB Time Off">73a66298a8df89102a7e579075e466ca</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>DIRECT</link_type>
+        <map_page/>
+        <mobile_title>Time Off Workspace</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name/>
+        <order/>
+        <override_menu_roles>true</override_menu_roles>
+        <query>/x/aesc/x_aesc_db_time_off/workspace/dashboard</query>
+        <report/>
+        <roles>x_aesc_db_time_off.admin,x_aesc_db_time_off.manager</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>33a66298fadf89100424c6d3821b7dca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Time Off Workspace</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name>sys_app_module_33a66298fadf89100424c6d3821b7dca</sys_update_name>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:58</sys_updated_on>
+        <timeline_page/>
+        <title>Time Off Workspace</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name>Time off workspace</window_name>
+    </sys_app_module>
+</record_update>

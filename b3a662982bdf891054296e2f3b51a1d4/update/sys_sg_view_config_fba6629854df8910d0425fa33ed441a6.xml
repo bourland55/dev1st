@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_config">
+    <sys_sg_view_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <name>Time Off View Config (Admin)</name>
+        <sys_class_name>sys_sg_view_config</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:05</sys_created_on>
+        <sys_id>fba6629854df8910d0425fa33ed441a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Time Off View Config (Admin)</sys_name>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name>sys_sg_view_config_fba6629854df8910d0425fa33ed441a6</sys_update_name>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:05</sys_updated_on>
+        <table>x_aesc_db_time_off_request</table>
+        <template display_value="Applet 01">6bb0be5c41a71010f877183fc9b8be0c</template>
+    </sys_sg_view_config>
+    <sys_translated_text action="delete_multiple" query="documentkey=fba6629854df8910d0425fa33ed441a6"/>
+</record_update>

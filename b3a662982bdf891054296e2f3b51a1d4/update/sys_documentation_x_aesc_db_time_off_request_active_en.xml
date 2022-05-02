@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="active" label="Active" language="en" table="x_aesc_db_time_off_request">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <help/>
+            <hint/>
+            <label>Active</label>
+            <language>en</language>
+            <name>x_aesc_db_time_off_request</name>
+            <plural>Active</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by/>
+            <sys_created_on/>
+            <sys_id>91b6a2981bdf8910fba942e8b04bcb96</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Active</sys_name>
+            <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+            <sys_update_name>sys_documentation_x_aesc_db_time_off_request_active_en</sys_update_name>
+            <sys_updated_by>David.Bourland</sys_updated_by>
+            <sys_updated_on>2022-05-02 15:54:31</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

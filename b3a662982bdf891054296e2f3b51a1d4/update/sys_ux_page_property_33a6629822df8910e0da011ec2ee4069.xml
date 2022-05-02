@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <name>statusIsApproved</name>
+        <page display_value="DB Time Off workspace">3ba66298a9df891034fae08550e8d4d3</page>
+        <required_translations>[]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>33a6629822df8910e0da011ec2ee4069</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>statusIsApproved</sys_name>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name>sys_ux_page_property_33a6629822df8910e0da011ec2ee4069</sys_update_name>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:31</sys_updated_on>
+        <type>string</type>
+        <unique_name>x_aesc_db_time_off.3ba66298a9df891034fae08550e8d4d3.root.statusIsApproved</unique_name>
+        <value>status=approved</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=33a6629822df8910e0da011ec2ee4069"/>
+</record_update>

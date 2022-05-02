@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_declarative_action_payload_mapping">
+    <sys_declarative_action_payload_mapping action="INSERT_OR_UPDATE">
+        <action_payload_definition display_value="Edit">73a662986adf8910018b8d0eaed448c5</action_payload_definition>
+        <label>Edit List</label>
+        <model display_value="List">c3547169534723003eddddeeff7b126c</model>
+        <payload_map>sysIds={{sysIds}}^table={{table}}^EQ</payload_map>
+        <sys_class_name>sys_declarative_action_payload_mapping</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:54</sys_created_on>
+        <sys_id>f7a66298ecdf8910bca8ba0cda061ec2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Edit List</sys_name>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name>sys_declarative_action_payload_mapping_f7a66298ecdf8910bca8ba0cda061ec2</sys_update_name>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:54</sys_updated_on>
+    </sys_declarative_action_payload_mapping>
+</record_update>

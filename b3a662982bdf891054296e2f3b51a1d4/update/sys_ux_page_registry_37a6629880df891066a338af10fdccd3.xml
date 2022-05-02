@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_page_registry">
+    <sys_ux_page_registry action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_panel>77a66298e9df8910289deb4f8ff677d3</admin_panel>
+        <admin_panel_table>sys_ux_app_config</admin_panel_table>
+        <auth_routes>{"login":"login", "logout":"login", "custom404":"custom404"}</auth_routes>
+        <page/>
+        <parent_app/>
+        <path>x_aesc_db_time_off/portal</path>
+        <root_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</root_macroponent>
+        <sys_class_name>sys_ux_page_registry</sys_class_name>
+        <sys_created_by>David.Bourland</sys_created_by>
+        <sys_created_on>2022-05-02 15:54:27</sys_created_on>
+        <sys_id>37a6629880df891066a338af10fdccd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DB Time Off portal</sys_name>
+        <sys_package display_value="DB Time Off" source="x_aesc_db_time_off">b3a662982bdf891054296e2f3b51a1d4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="DB Time Off">b3a662982bdf891054296e2f3b51a1d4</sys_scope>
+        <sys_update_name>sys_ux_page_registry_37a6629880df891066a338af10fdccd3</sys_update_name>
+        <sys_updated_by>David.Bourland</sys_updated_by>
+        <sys_updated_on>2022-05-02 15:54:27</sys_updated_on>
+        <title>DB Time Off portal</title>
+    </sys_ux_page_registry>
+</record_update>
